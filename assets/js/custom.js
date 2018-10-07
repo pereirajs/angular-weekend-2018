@@ -160,6 +160,8 @@
 
 		$('.mu-speakers-slider').slick({
 		  slidesToShow: 4,
+			autoplay: true,
+			autoplaySpeed: 3000,
 		  responsive: [
 		    {
 		      breakpoint: 768,
