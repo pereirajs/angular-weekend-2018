@@ -572,6 +572,13 @@ button:focus {
 	min-width: 200px;
 }
 
+.speakers .speaker-item .speaker-name a{
+	color: white;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 18px;
+	margin-left: 15PX;
+}
+
 .speakers .speaker-item .wrapper-speaker-image img {
 	width: 100%;
 }
