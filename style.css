@@ -78,7 +78,7 @@ h6 {
 }
 
 h3, h4, h5, h6 {
-	font-family: 'Archivo Narrow Semi-Bold', sans-serif;
+	font-family: 'Archivo Narrow', sans-serif;
 	font-weight: bold;
 }
 
@@ -227,7 +227,7 @@ button:focus {
 /* HEADER */
 /*--------------------*/
 
-#mu-hero {
+.mu-hero {
 	background-image: url("assets/images/head-featured-bg.jpg");
 	display: inline;
 	float: left;
@@ -238,21 +238,32 @@ button:focus {
 	background-size: cover;
 }
 
+.mu-hero-overlay::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(assets/images/backgrounds/bg_1.svg);
+	background-repeat: no-repeat;
+	background-position: -35px -120px;
+	background-size: 150%;
+	display: inline;
+	float: left;
+	opacity: 0.1;
+}
+
 .mu-hero-area{
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	min-height: 400px;
 }
 
-
-
 .mu-logo-area {
 	color: white;
 	text-align: center;
 	display: flex;
-	justify-content: center;
+	justify-content: start;
 	align-items: center;
 }
 
@@ -410,7 +421,7 @@ button:focus {
 /* MENU */
 /*--------------------*/
 
-#mu-hero .navbar-default {
+.mu-hero .navbar-default {
 	background-color: #fff;
 	border-color: #e7e7e7;
 	padding: 5px 0;
@@ -425,10 +436,21 @@ button:focus {
 	top: 0px;
 }
 
-#mu-hero .navbar-default .navbar-brand {
-	padding: 15px 15px;
+.mu-hero .navbar-default .navbar-brand {
+	padding: 5px 15px;
 	font-size: 28px;
 	line-height: 20px;
+	font-family: 'Lobster', cursive;
+}
+
+.mu-hero .navbar-default .navbar-brand img{
+	width: 35px;
+	display: inline-block;
+}
+
+.mu-hero .navbar-default .navbar-brand .name-logo{
+	display: inline-block;
+	color: #296b8f;
 }
 
 .mu-navbar .mu-menu li a {
@@ -502,21 +524,90 @@ button:focus {
 
 
 #mu-video {
-	background-image: url("assets/images/about-video-bg.jpg");
-	background-attachment: fixed;
-	background-position: center center;
-	-webkit-background-size: cover;
-	background-size: cover;
+	/*background-image: url("assets/images/about-video-bg.jpg");*/
+	/*background-attachment: fixed;*/
+	/*background-position: center center;*/
+	/*-webkit-background-size: cover;*/
+	/*background-size: cover;*/
+	/*display: inline;*/
+	/*float: left;*/
+	/*width: 100%;*/
+}
+
+#speakers{
 	display: inline;
 	float: left;
+	width: 100%;
+	color: white;
+	position: relative;
+}
+
+#speakers::before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(assets/images/backgrounds/bg_1.svg);
+	background-repeat: no-repeat;
+	opacity: 0.04;
+	background-size: cover;
+	background-position: 190px 50%;
+}
+
+
+#speakers .speakers-area{
+	padding: 40px 0px 60px 0px;
+}
+
+.text-speaker{
+	margin-left: 25px;
+}
+
+
+.speakers{
+	margin-top: 50px;
+}
+
+.speakers .speaker-item .wrapper-speaker-image {
+	min-width: 200px;
+}
+
+.speakers .speaker-item .wrapper-speaker-image img {
 	width: 100%;
 }
 
-.mu-video-overlay {
-	display: inline;
-	float: left;
-	opacity: 0.85;
-	width: 100%;
+.speakers .speaker-item {
+	display: flex;
+}
+
+.speakers .speaker-item .name{
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.speakers .speaker-item .name::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -15px;
+	height: 2px;
+	width: 150px;
+	background-color: white;
+}
+
+.speakers .speaker-item .tag {
+	font-weight: 400;
+	font-style: italic;
+}
+
+.speakers .speaker-item .description {
+	font-weight: 400;
+	margin-top: 30px;
+	color: #E2E2E0;
+}
+
+.speakers .speaker-item .description .text-bold{
+	color: white;
 }
 
 .mu-video-area {
@@ -1405,7 +1496,13 @@ button:focus {
 /* RESPONSIVE STYLE */
 /*--------------------*/
 
+
 @media (max-width: 1199px) {
+
+	.mu-hero-overlay::before{
+		background-position: -128px center;
+		background-size: 200%;
+	}
 
 	.mu-register-content {
 		padding: 0 150px;
@@ -1621,6 +1718,16 @@ button:focus {
 
 	body {
 		font-size: 14px;
+	}
+
+	.mu-hero-overlay::before{
+		background-position: -150px center;
+		background-size: 150%;
+		background-image: url("assets/images/backgrounds/bg_2.svg");
+	}
+
+	.name-logo{
+		font-size: 20px;
 	}
 
 	.mu-logo-area{

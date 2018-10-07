@@ -4,10 +4,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property=”og:title” content="Angular Weekend Pereira"/>
+  <meta property=”og:image” content="assets/images/meta-image.jpg" />
+  <meta property=”og:site_name” content="Angular weekend"/>
+  <meta property=”og:description” content=""/>
+
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Angular Weekend Pereira - PeiraJS</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+  <link rel="shortcut icon" type="image/icon" href="assets/images/favico/favicon.ico"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favico/favicon-16x16.png">
+  <meta name="theme-color" content="#296b8f">
+
   <!-- Font family -->
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,500i,600,700" rel="stylesheet">
@@ -35,7 +45,7 @@
 <body>
 
 <!-- Start Header -->
-<header id="mu-hero" class="" role="banner">
+<header id="inicio" class="mu-hero" role="banner">
   <!-- Start menu  -->
   <nav class="navbar navbar-fixed-top navbar-default mu-navbar">
     <div class="container">
@@ -49,15 +59,19 @@
         </button>
 
         <!-- Logo -->
-        <a class="navbar-brand" href="index.html">Angular Weekend</a>
+        <a class="navbar-brand" href="#inicio">
+          <img src="assets/images/angular-weekend-logo.svg">
+          <span class="name-logo">Angular Weekend</span>
+        </a>
 
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav mu-menu navbar-right">
-          <li><a href="#mu-hero">Inicio</a></li>
+          <li><a href="#inicio">Inicio</a></li>
           <li><a href="#mu-about">Evento</a></li>
+          <li><a href="#speakers">Speakers</a></li>
           <li><a href="#mu-schedule">Cronograma</a></li>
           <li><a href="#mu-speakers">Voluntarios</a></li>
           <li><a href="#mu-register">Inscripción</a></li>
@@ -129,28 +143,46 @@
   <!-- End About -->
 
   <!-- Start Video -->
-  <section id="mu-video">
+  <section id="speakers">
     <div class="mu-video-overlay">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="mu-video-area">
-              <h2>Watch Previous Event Video</h2>
-              <a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <div class="speakers-area">
+              <h1 class="text-center">Speaker Invitado</h1>
+              <div class="row speakers">
+                <div class="col-md-offset-2 col-md-8 speaker-item">
+                  <div class="wrapper-speaker-image">
+                    <img src="assets/images/speakers/juan_herrera-03.svg">
+                  </div>
+                  <div class="text-speaker">
+                    <div class="speaker-name">
+                      <h2 class="name">Juan Herrera <small><a href="https://twitter.com/jdjuan" target="_blank">(@jdjuan)</a></small></h2>
+                      <h4 class="tag">Google Developer Expert en Angular</h4>
+                    </div>
+                    <div class="description">
+                      Él es el Director de Desarrollo Front-end en <a href="https://www.yuxiglobal.com" class="text-bold" target="_blank">Yuxi Global</a> 💾 donde proporciona consultoría en Angular a diferentes compañías.
+                      Es organizador de <a href="https://www.meetup.com/Angular-Medellin" class="text-bold" target="_blank">Angular Medellín</a>
+                      y <a href="https://www.ngcolombia.com/" class="text-bold" target="_blank">NgColombia</a> (la primera conferencia de Angular en Latinoamérica).
+                      A Juan le encanta 💙 crear aplicaciones sociales. En su tiempo libre a él le gusta bailar y cantar 🎤.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Start Video content -->
-    <div class="mu-video-content">
-      <div class="mu-video-iframe-area">
-        <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-    <!-- End Video content -->
+    <!--&lt;!&ndash; Start Video content &ndash;&gt;-->
+    <!--<div class="mu-video-content">-->
+    <!--<div class="mu-video-iframe-area">-->
+    <!--<a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>-->
+    <!--<iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; End Video content &ndash;&gt;-->
 
   </section>
   <!-- End Video -->
