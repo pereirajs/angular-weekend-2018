@@ -1118,7 +1118,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-  background-image: url("assets/images/register-bg.jpg");
+  background-image: url("assets/images/backgrounds/angularjs-banner.png");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -1982,4 +1982,3 @@ button:focus {
 
 
 }
-
