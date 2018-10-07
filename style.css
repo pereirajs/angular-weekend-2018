@@ -1770,7 +1770,7 @@ button:focus {
   }
 
   .mu-hero-featured-area {
-    padding: 60px 0 60px;
+    padding: 0px 0 50px;
   }
 
   .mu-hero-featured-content {
@@ -1915,10 +1915,6 @@ button:focus {
 
 
 @media (max-width: 360px) {
-
-  .mu-hero-featured-area {
-    padding: 30px 0 30px;
-  }
 
   .mu-event-counter-block {
     height: 56px;
