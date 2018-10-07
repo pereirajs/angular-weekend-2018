@@ -82,6 +82,7 @@ Author URI : http://www.markups.io/
 .mu-reg-submit-btn:focus {
 	background-color: #296B8F;
 	border: 2px solid #296B8F;
+	color: white;
 }
 
 

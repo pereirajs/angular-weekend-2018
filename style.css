@@ -981,14 +981,18 @@ button:focus {
 
 .mu-venue-address h3 {
   margin-top: 15px;
-  margin-bottom: 0px;
+  margin-bottom: 65px;
 }
 
 .mu-venue-address h4 {
   font-size: 18px;
-  font-weight: 300;
   margin-top: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.mu-venue-address ul li{
+  margin-bottom: 20px;
 }
 
 
@@ -1254,7 +1258,7 @@ button:focus {
 .mu-faq-area {
   display: inline;
   float: left;
-  padding: 150px 0;
+  padding: 100px 0;
   width: 100%;
 }
 
