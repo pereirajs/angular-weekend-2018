@@ -86,11 +86,11 @@ Author URI : http://www.markups.io/
 }
 
 
-.mu-single-event a{
+.mu-single-event a, .item-event .link{
   color: #296B8F !important;
+	cursor: pointer;
 }
 
-.mu-single-event a:hover {
+.mu-single-event a:hover, .item-event .link:hover {
 	opacity: 0.7;
 }
-

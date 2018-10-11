@@ -487,6 +487,32 @@ button:focus {
   width: 100%;
 }
 
+.mu-about-area > div:nth-child(3) .event-area{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.mu-about-area > div:nth-child(3) .event-area .mu-about-left{
+  text-align: right;
+}
+
+.item-event .description-event {
+  text-align: justify;
+}
+
+.item-event .text-right {
+  margin-bottom: 20px;
+}
+
+.title-event-day{
+  margin-bottom: 30px;
+}
+
+.mu-about-area .event-area{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .mu-title-area {
   display: inline;
   float: left;
@@ -1590,6 +1616,27 @@ button:focus {
 
   .mu-navbar .mu-menu {
     margin-top: 5px;
+  }
+
+  .mu-about-left{
+    text-align: center;
+  }
+
+  .mu-about-area{
+    display: block;
+  }
+
+  .mu-about-left img{
+    max-width: none;
+    max-height: 240px;
+  }
+
+  .mu-about-area > div:nth-child(3) .event-area{
+    display: block !important;
+  }
+
+  .mu-about-area > div:nth-child(3) .event-area .mu-about-left{
+    text-align: center;
   }
 
   .mu-navbar .mu-menu li a {
