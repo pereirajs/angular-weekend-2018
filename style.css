@@ -495,6 +495,10 @@ button:focus {
   width: 100%;
 }
 
+.mu-title-area h6{
+  font-weight: 400;
+}
+
 .mu-title {
   color: #1c1b1b;
   margin-bottom: 15px;
@@ -569,7 +573,17 @@ button:focus {
 }
 
 .speakers .speaker-item .wrapper-speaker-image {
-  min-width: 200px;
+  min-width: 180px;
+}
+
+.speaker-item:nth-child(2n) {
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+.speaker-item:nth-child(2n) .text-speaker {
+  margin-left: 0px;
+  margin-right: 25px;
 }
 
 .speakers .speaker-item .speaker-name a{
@@ -577,6 +591,14 @@ button:focus {
   font-family: 'Archivo Narrow', sans-serif;
   font-size: 18px;
   margin-left: 15PX;
+}
+
+.speakers .speaker-item .speaker-name a:hover{
+  opacity: 0.7;
+}
+
+.speakers .speaker-item .speaker-name a i {
+  margin-right: 5px;
 }
 
 .speakers .speaker-item .wrapper-speaker-image img {
@@ -611,6 +633,7 @@ button:focus {
   font-weight: 400;
   margin-top: 30px;
   color: #E2E2E0;
+  text-align: justify;
 }
 
 .speakers .speaker-item .description .text-bold{
@@ -1118,7 +1141,7 @@ button:focus {
 /*--------------------*/
 
 #mu-register {
-  background-image: url("assets/images/backgrounds/angularjs-banner.png");
+  background-image: url("assets/images/backgrounds/register_web.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -1142,22 +1165,23 @@ button:focus {
 .mu-register-area {
   display: inline;
   float: left;
-  padding: 150px 0;
+  padding-top: 120px;
+  padding-bottom: 40px;
   width: 100%;
 }
 
 .mu-register-area .mu-title,
-.mu-register-area p {
+.mu-register-area p, h6 {
   color: #fff;
 }
 
 .mu-register-content {
-  display: inline;
-  float: left;
-  width: 100%;
   text-align: center;
-  padding: 0 200px;
   margin-top: 50px;
+}
+
+.mu-register-content .description-register{
+  margin-bottom: 15px;
 }
 
 .mu-register-form .form-group {
@@ -1200,11 +1224,12 @@ button:focus {
   border: 2px solid #fff;
   color: #fff;
   padding: 12px 75px;
-  margin-top: 20px;
+  margin: 0px 0px 50px 0px;
   letter-spacing: 1px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  display: inline-block;
 }
 
 
@@ -1222,26 +1247,42 @@ button:focus {
 .mu-sponsors-area {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 80px 0px 10px 0px;
   width: 100%;
 }
 
 .mu-sponsors-content {
   display: inline;
   float: left;
-  margin-top: 50px;
+  margin-top: 25px;
   width: 100%;
 }
 
+.mu-sponsors-content .col-sponsors > div{
+  margin-bottom: 50px;
+}
+
 .mu-sponsors-single {
-  background: #eee;
-  display: inline;
-  float: left;
+  display: inline-block;
+  text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
   width: 100%;
 }
 
+.mu-sponsors-single img {
+  width: 60%;
+  max-width: 220px;
+  min-width: 180px;
+}
+
+.mu-sponsors-single h3{
+  margin-bottom: 20px;
+}
+
+.mu-sponsors-single.secundary_sponsor {
+
+}
 
 /*--------------------*/
 /* FAQ */
@@ -1258,7 +1299,7 @@ button:focus {
 .mu-faq-area {
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 80px 0px 50px 0px;
   width: 100%;
 }
 
@@ -1704,6 +1745,38 @@ button:focus {
     padding: 0;
   }
 
+  #speakers::before{
+    background-position: center;
+  }
+
+  .speakers .speaker-item {
+    display: block;
+  }
+
+  .text-speaker{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
+
+  .speakers .speaker-item .wrapper-speaker-image {
+    width: 100%;
+    text-align: center
+  }
+
+  .speakers .speaker-item .wrapper-speaker-image img{
+    width: 150px;
+  }
+
+  .speakers .speaker-item .name::before {
+    left: 0;
+    right: 0;
+    margin: auto
+  }
+
+
   .mu-video-iframe-area {
     padding: 5% 5%;
   }
@@ -1804,36 +1877,6 @@ button:focus {
     width: 75px;
     font-size: 12px;
     margin: 0 5px;
-  }
-
-  .speakers .speaker-item {
-    display: block;
-  }
-
-  .text-speaker{
-    margin-left: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-  }
-
-  .speakers .speaker-item .description{
-    text-align: justify;
-  }
-
-  .speakers .speaker-item .wrapper-speaker-image {
-    width: 100%;
-    text-align: center
-  }
-
-  .speakers .speaker-item .wrapper-speaker-image img{
-    width: 150px;
-  }
-
-  .speakers .speaker-item .name::before {
-    left: 0;
-    right: 0;
-    margin: auto
   }
 
   .mu-video-close-btn {

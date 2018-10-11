@@ -86,6 +86,11 @@ Author URI : http://www.markups.io/
 }
 
 
+.mu-single-event a{
+  color: #296B8F !important;
+}
 
-
+.mu-single-event a:hover {
+	opacity: 0.7;
+}
 
