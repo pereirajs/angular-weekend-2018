@@ -228,7 +228,6 @@ button:focus {
 /*--------------------*/
 
 .mu-hero {
-  background-image: url("assets/images/head-featured-bg.jpg");
   display: inline;
   float: left;
   width: 100%;
