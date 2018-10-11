@@ -496,6 +496,10 @@ button:focus {
   text-align: right;
 }
 
+.mu-about-area ul{
+  margin-left: 18px;
+}
+
 .item-event .description-event {
   text-align: justify;
 }
