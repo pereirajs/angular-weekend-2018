@@ -331,7 +331,7 @@ button:focus {
 }
 
 .area-call-to-action .view_more:hover{
-   opacity: 0.4;
+  opacity: 0.4;
 }
 
 /* */
@@ -579,9 +579,17 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.mu-about-area .event-area{
-  padding-top: 40px;
-  padding-bottom: 40px;
+.mu-about-area > div .row{
+  margin-bottom: 50px;
+}
+
+.mu-about-area > div:last-child .row{
+  margin-bottom: 0px !important;
+}
+
+.mu-about-area > div:first-child{
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 .mu-title-area {
@@ -613,7 +621,6 @@ button:focus {
 .mu-about-right {
   display: inline;
   float: left;
-  margin-top: 30px;
   width: 100%;
 }
 
@@ -1692,6 +1699,7 @@ button:focus {
 
   .mu-about-left{
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .mu-about-area{
@@ -1967,6 +1975,7 @@ button:focus {
 
   .mu-hero-featured-area {
     padding: 0px 0 50px;
+    margin-top: -60px;
   }
 
   .mu-hero-featured-content {
