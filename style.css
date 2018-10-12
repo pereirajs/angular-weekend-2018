@@ -316,6 +316,74 @@ button:focus {
   right: 0px;
 }
 
+.area-call-to-action {
+  margin-bottom: 30px;
+  POSITION: ABSOLUTE;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+.area-call-to-action .view_more{
+  opacity: 0.7;
+  color: white;
+  cursor: pointer;
+}
+
+.area-call-to-action .view_more:hover{
+   opacity: 0.4;
+}
+
+/* */
+.mouse {
+  position: absolute;
+  width: 22px;
+  height: 42px;
+  bottom: 25px;
+  left: 50%;
+  margin-left: -12px;
+  border-radius: 15px;
+  border: 2px solid white;
+  animation: intro 1s;
+}
+
+.scroll{
+  display: block;
+  width: 3px;
+  height: 3px;
+  margin: 6px auto;
+  border-radius: 4px;
+  background: white;
+  animation: finger 1s infinite;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes finger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+
+.area-call-to-action a{
+  color: white;
+}
+
 .mu-menu-btn {
   position: fixed;
   right: 15%;
@@ -342,7 +410,7 @@ button:focus {
 .mu-hero-featured-area {
   display: inline;
   float: left;
-  padding: 60px 0 150px;
+  padding: 15px 0 150px;
   width: 100%;
 }
 
