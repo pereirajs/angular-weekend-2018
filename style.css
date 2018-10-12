@@ -1045,6 +1045,7 @@ button:focus {
 
 .mu-venue-address ul li{
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 
@@ -1792,7 +1793,7 @@ button:focus {
   }
 
   .mu-title-area {
-    padding: 0;
+    padding: 0 20px;
   }
 
   #speakers::before{
