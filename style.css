@@ -604,6 +604,14 @@ button:focus {
   font-weight: 400;
 }
 
+.mu-register-area .mu-title-area a {
+  color: white;
+  text-decoration: underline;
+}
+.mu-register-area .mu-title-area a:hover {
+  opacity: 0.8;
+}
+
 .mu-title {
   color: #1c1b1b;
   margin-bottom: 15px;
@@ -1324,12 +1332,17 @@ button:focus {
   font-size: 15px;
 }
 
+.wrapper-button-register{
+  margin-bottom: 50px;
+  display: block;
+}
+
 .mu-reg-submit-btn {
   background-color: transparent;
   border: 2px solid #fff;
   color: #fff;
   padding: 12px 75px;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 10px 0px;
   letter-spacing: 1px;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -1337,6 +1350,11 @@ button:focus {
   display: inline-block;
 }
 
+.mu-reg-submit-btn.disabled{
+  opacity: 0.5;
+  cursor: text;
+  color: white !important;
+}
 
 /*--------------------*/
 /* SPONSORS */

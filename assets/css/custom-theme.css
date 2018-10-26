@@ -78,8 +78,8 @@ Author URI : http://www.markups.io/
 
 }
 
-.mu-reg-submit-btn:hover,
-.mu-reg-submit-btn:focus {
+.mu-reg-submit-btn:not(.disabled):hover,
+.mu-reg-submit-btn:not(.disabled):focus {
 	background-color: #296B8F;
 	border: 2px solid #296B8F;
 	color: white;
